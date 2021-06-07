@@ -1,0 +1,5 @@
+reate table student12(rollno number primary key,name varchar2(30) not null,address varchar2(30) unique,mark number check (mark >5))
+insert into student12 values(103,'Ravi','Bangalore',10); 
+insert into student12(name,rollno,address,mark) values('Kiran',101,'chennei',15);
+insert into student12(name,rollno,mark) values('sunil',104,15);
+select * from student12
