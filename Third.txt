@@ -29,3 +29,8 @@ public class Third {
 		 obj.display();
 	}	
 }
+OUTPUT:
+The rollno is 101
+The Name is Ravikumar
+The Address is RTNagar
+The Salary is 20000
