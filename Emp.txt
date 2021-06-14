@@ -1,0 +1,54 @@
+First.html
+
+<html>
+<body style="background-color:rgb(255,193,22);">
+<form action=second.jsp>
+</center><h1 style="font-size:200%;"><i style="color:blue;"><b style="font-family:Algerian;"><center><u>Employee Registration page</u></center></b></i></h1>
+<table>
+<center>
+<tr><td style="font-family:Times New Roman;"><i><b>Enter Empno<td><input type=number name=t1 size=20 required></b></i><tr>
+ <tr><td style="font-family:Times New Roman;"><i><b>Enter EmpName<td><input type=text name=t2 size=20 required></b></i><tr>
+  <tr><td style="font-family:Times New Roman;"><i><b>Enter Your Phone Number<td><input type=number name=t3 size=20 required></b></i><tr>
+  <tr><td style="font-family:Times New Roman;"><i><b>Enter Salary<td><input type=number name=t4 size=20 required></b></i><tr>
+   <tr><td style="font-family:Times New Roman;"><i><b>Enter Your Date of Birth<td><input type=date name=t5 Size=20 required></b></i><tr>
+   <tr><td style="font-family:Times New Roman;"><i><b>Enter Your designation<td><input type=text name=t6 size=20 required></b></i><tr>
+    <tr><td style="font-family:Times New Roman;"><i><b>Enter Your EmailID<td><input type=email name=t7 size=20 required></b></i><tr>
+     <tr><td style="font-family:Times New Roman;"><i><b>Enter Your Address<td><input type=text name=t8 size=20 required></b></i><tr>
+      <tr><td style="font-family:Times New Roman;"><td><i><b><mark><input type=Submit value=Submit></mark></b></i><tr>
+</table>
+</form>
+</body>
+</html>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+second.jsp
+
+<body style="background-color:rgb(225,23,222);">
+<% 
+String a=request.getParameter("t1"); 
+String b=request.getParameter("t2");
+String c=request.getParameter("t3");
+String d=request.getParameter("t4");
+String e=request.getParameter("t5");
+String f=request.getParameter("t6");
+String g=request.getParameter("t7");
+String h=request.getParameter("t8");
+%>
+<%
+out.println("<b>");
+out.println("The Empno is "+a);
+out.println("<br>");
+out.println("The Empname is "+b);
+out.println("<br>");
+out.println("The Phoneno is "+c);
+out.println("<br>");
+out.println("The Salary "+d);
+out.println("<br>");
+out.println("The Date of Birth is "+e);
+out.println("<br>");
+out.println("The Designation is "+f);
+out.println("<br>");
+out.println("The EmailID is "+g);
+out.println("<br>");
+out.println("The Address is "+h);
+out.println("</b>");
+%>
